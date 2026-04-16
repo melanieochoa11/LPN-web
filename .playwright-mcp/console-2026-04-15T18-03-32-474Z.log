@@ -1,0 +1,14 @@
+[     595ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/favicon.ico:0
+[   17599ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.png:0
+[   17604ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpg:0
+[   17609ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpeg:0
+[  388436ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.png:0
+[  388440ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpg:0
+[  388444ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpeg:0
+[  604882ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.png:0
+[  604887ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpg:0
+[  604892ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpeg:0
+[  611507ms] [ERROR] Failed to find a valid digest in the 'integrity' attribute for resource 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' with computed SHA-512 integrity 'iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='. The resource has been blocked. @ http://127.0.0.1:4173/solicitudes.html:0
+[  946099ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.png:0
+[  946103ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpg:0
+[  946107ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/imagenes/equipos/prueba.jpeg:0

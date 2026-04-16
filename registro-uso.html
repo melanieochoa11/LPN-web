@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de uso – LPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    form.card-form { max-width: 720px; }
+    fieldset { border: 0; margin: 0; padding: 0; display: none; }
+    fieldset.active { display: block; }
+    .actions { justify-content: space-between; }
+    legend { font-weight: 750; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="left">
+      <img class="logo" src="logo.png" alt="Logo del laboratorio" loading="lazy">
+      <h1>Registro de uso</h1>
+    </div>
+    <div></div>
+  </header>
+  <main class="app-main">
+    <div class="container">
+      <form id="registroForm" class="card card-form" novalidate>
+      <!-- Paso 1 -->
+      <fieldset id="step-1" class="active">
+        <legend>Tipo de registro</legend>
+        <div class="field">
+          <label for="tipoRegistro">Seleccione el tipo de registro</label>
+          <select id="tipoRegistro" name="tipo" required aria-required="true">
+          <option value="">– selecciona –</option>
+          <option value="Practica">Práctica de lab o Cátedra</option>
+          <option value="Pasantia">Pasantías</option>
+          <option value="Tesis">Tesis/Proyectos</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button type="button" id="cancelBtn" class="btn btn-secondary">Cancelar</button>
+          <button type="button" id="next1Btn" class="btn btn-primary">Siguiente</button>
+        </div>
+      </fieldset>
+      <!-- Paso 2 -->
+      <fieldset id="step-2">
+        <legend id="legend-2">Detalles del registro</legend>
+        <!-- Contenedor dinámico según tipo -->
+        <div id="contenedorTipo"></div>
+        <div class="actions">
+          <button type="button" id="back2Btn" class="btn btn-secondary">Anterior</button>
+          <button type="button" id="next2Btn" class="btn btn-primary">Siguiente</button>
+        </div>
+      </fieldset>
+      <!-- Paso 3 -->
+      <fieldset id="step-3">
+        <legend>Datos generales</legend>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Nombre completo">
+        </div>
+        <div class="field">
+          <label for="fecha">Fecha</label>
+          <input type="text" id="fecha" name="fecha" required aria-required="true" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="field">
+          <label for="correo">Correo institucional</label>
+          <input type="email" id="correo" name="correo" required aria-required="true" placeholder="usuario@ikiam.edu.ec">
+        </div>
+        <div class="field">
+          <label for="observaciones">Observaciones</label>
+          <textarea id="observaciones" name="observaciones" rows="3" placeholder="Observaciones"></textarea>
+        </div>
+        <div class="actions">
+          <button type="button" id="back3Btn" class="btn btn-secondary">Anterior</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </fieldset>
+      </form>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Importamos el módulo desde la carpeta js -->
+  <script type="module" src="js/registro-uso.js"></script>
+</body>
+</html>

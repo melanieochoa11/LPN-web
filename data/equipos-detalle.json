@@ -1,0 +1,107 @@
+[
+  {
+    "Equipo":"UHPLC-QTOF",
+    "Marca":"Waters",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"pH metro",
+    "Marca":"Toledo",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Higrómetro",
+    "Marca":"Thermo Scientific",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Agitador calentador con regulador de temperatura",
+    "Marca":"Saigon",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Balanza analítica",
+    "Marca":"Ohaus",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Juegos micropipetas",
+    "Marca":"Thermo Scientific",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Refrigeradoras comerciales de 1 a 4",
+    "Marca":"Mabe",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Rotavapor",
+    "Marca":"Buchi",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Estufa",
+    "Marca":"Esco",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Cabina de extracción de gases 9u",
+    "Marca":"Esco",
+    "Cantidad":6
+  },
+  {
+    "Equipo":"Bomba de succión para disolventes, (sistema de filtración) incluye filtro de membrana 100 U + sistema de filtración.",
+    "Marca":"Gast",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Bomba de vacío (de membrana)",
+    "Marca":"Vaccubrand distribuida por Fisher Scientific",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Sistema de purificación de agua",
+    "Marca":"Thermo Scientific",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Espectrofotómetro de UV VIS NIR",
+    "Marca":"Shimadzu",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Cromatógrafo de gases con \nespectrómetro de masas con cuadrupolo y detector Fid.",
+    "Marca":"Shimadzu",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Cromatografo de gases con detector FID",
+    "Marca":"Shimadzu",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Baño ultrasónico",
+    "Marca":"Brunton",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Lámpara UV",
+    "Marca":"Thermo Scientific",
+    "Cantidad":2
+  },
+  {
+    "Equipo":"Mezclador vortex",
+    "Marca":"Biobase",
+    "Cantidad":1
+  },
+  {
+    "Equipo":"Planchas de calentamiento",
+    "Marca":"Fisherbrand",
+    "Cantidad":6
+  },
+  {
+    "Equipo":"Deshumificadores",
+    "Marca":"Inofia",
+    "Cantidad":1
+  }
+]

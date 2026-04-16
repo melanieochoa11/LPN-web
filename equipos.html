@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos – LPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="left">
+      <button id="backHome" class="back-btn" aria-label="Volver">←</button>
+      <img class="logo" src="logo.png" alt="Logo del laboratorio" loading="lazy">
+      <h1>Equipos</h1>
+    </div>
+    <img class="brand" src="ikiam-logo.png" alt="Ikiam" loading="lazy">
+  </header>
+  <main class="app-main">
+    <div class="container">
+    <!-- Paso 1: Búsqueda -->
+    <div class="card" id="step1">
+      <h2>Búsqueda de equipos</h2>
+      <p class="help">Busca por nombre. Si no aparece, verifica el inventario.</p>
+      <div class="field">
+        <label for="equipoBusqueda">Equipo</label>
+        <input type="text" id="equipoBusqueda" list="equiposList" placeholder="Escribe o selecciona el equipo" autocomplete="off">
+      </div>
+      <datalist id="equiposList"></datalist>
+      <div class="actions">
+        <button id="buscarEquipoBtn" class="btn btn-primary" type="button">Buscar</button>
+      </div>
+    </div>
+    <!-- Paso 2: Detalle y acción -->
+    <div class="card hidden" id="step2">
+      <h2 id="equipoNombre">Equipo</h2>
+      <div class="step-layout">
+        <div class="details">
+          <div class="field">
+            <label for="equipoAccion">Tipo de accion</label>
+            <select id="equipoAccion">
+            <option value="">– selecciona –</option>
+            <option value="Solicitud">Solicitud</option>
+            <option value="Registro">Registro</option>
+            </select>
+          </div>
+          <!-- Formulario para Solicitud -->
+          <div id="formSolicitud" class="hidden">
+            <div class="field">
+              <label for="solicitudRango">Rango de uso (inicio - fin)</label>
+              <input type="text" id="solicitudRango" placeholder="Selecciona rango" readonly>
+            </div>
+            <div class="time-grid">
+              <div class="field">
+                <label for="solicitudHoraInicio">Hora de inicio</label>
+                <input type="time" id="solicitudHoraInicio" min="07:00" max="20:00" step="1800">
+              </div>
+              <div class="field">
+                <label for="solicitudHoraFin">Hora de fin</label>
+                <input type="time" id="solicitudHoraFin" min="07:00" max="20:00" step="1800">
+              </div>
+            </div>
+            <div id="ocupacionInfo" class="ocupacion-info"></div>
+            <div id="ocupacionDetalle" class="ocupacion-detalle hidden"></div>
+          </div>
+          <!-- Formulario para Registro (solo fecha de uso) -->
+          <div id="formRegistro" class="hidden">
+            <div class="field">
+              <label for="registroFecha">Fecha de uso</label>
+              <input type="text" id="registroFecha" placeholder="dd/mm/aaaa" readonly>
+            </div>
+          </div>
+          <!-- Grupo de actividad (se muestra para Solicitud y Registro) -->
+          <div id="equipoActividadGroup" class="hidden">
+            <div class="field">
+              <label for="equipoActividad">Actividad</label>
+              <select id="equipoActividad">
+              <option value="">– selecciona –</option>
+              <option value="Práctica de laboratorio">Práctica de laboratorio</option>
+              <option value="Proyecto">Proyecto</option>
+              <option value="Tesis">Tesis</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="equipoDescripcion">Descripcion</label>
+              <input type="text" id="equipoDescripcion" placeholder="Que se va a realizar">
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <img class="catalog" id="equipoImg" src="" alt="Imagen del equipo" loading="lazy">
+        </div>
+      </div>
+      <div class="actions">
+        <button id="cancelStep2" class="btn btn-secondary" type="button">Cancelar</button>
+        <button id="addEquipoBtn" class="btn btn-secondary" type="button">Agregar otro</button>
+        <button id="finalizarEquipoBtn" class="btn btn-primary" type="button">Finalizar</button>
+      </div>
+    </div>
+    <!-- Paso 3: Resumen y datos generales -->
+    <div class="card hidden" id="step3">
+      <h2>Resumen de equipos</h2>
+      <div id="listaEquiposResumen" class="summary"></div>
+      <div class="field">
+        <label for="equipoNombreUsuario">Nombre</label>
+        <input type="text" id="equipoNombreUsuario" placeholder="Nombre completo" required>
+      </div>
+      <div class="field">
+        <label for="equipoCorreoUsuario">Correo institucional</label>
+        <input type="email" id="equipoCorreoUsuario" placeholder="usuario@ikiam.edu.ec" required>
+      </div>
+      <div class="field">
+        <label for="equipoObservaciones">Observaciones</label>
+        <textarea id="equipoObservaciones" rows="3" placeholder="Observaciones"></textarea>
+      </div>
+      <div class="actions">
+        <button id="backToSearch" class="btn btn-secondary" type="button">Volver</button>
+        <button id="enviarEquipos" class="btn btn-primary" type="button">Enviar</button>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="app-footer">
+    <p><strong>Contacto:</strong> melani.ochoa@ikiam.edu.ec</p>
+    <p><strong>Teléfono:</strong> 0959546317</p>
+    <p><strong>Ubicación:</strong> LPN - Laboratorio de Productos Naturales – Tena, Ecuador</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/rangePlugin.js"></script>
+  <!-- Importamos el módulo desde la carpeta js -->
+  <script type="module" src="js/equipos.js"></script>
+</body>
+</html>

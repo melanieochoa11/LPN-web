@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – LPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body class="admin">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" aria-label="Navegacion">
+      <div class="admin-badge" aria-hidden="true"></div>
+      <a class="nav-icon" href="index.html" title="Inicio" aria-label="Inicio"><span aria-hidden="true">⌂</span></a>
+      <a class="nav-icon" href="solicitudes.html" title="Solicitudes" aria-label="Solicitudes"><span aria-hidden="true">≡</span></a>
+      <a class="nav-icon active" href="#" title="Dashboard" aria-label="Dashboard" aria-current="page"><span aria-hidden="true">◉</span></a>
+      <div style="flex:1"></div>
+      <a class="nav-icon" href="https://docs.google.com/spreadsheets/d/1QqMr5qno1h4D8sxfosfAxv6db7B6D2v-1JdvtVvxqSY/edit?usp=sharing" target="_blank" rel="noopener" title="Abrir base LPN" aria-label="Abrir base LPN"><span aria-hidden="true">↗</span></a>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <div>
+          <h1 class="admin-title">Panel ejecutivo LPN</h1>
+          <p class="admin-subtitle">Una vista compacta para entender rápido el estado operativo del laboratorio.</p>
+        </div>
+        <div class="admin-actions">
+          <div id="adminStatus" class="admin-pill">Conectando...</div>
+          <button id="adminConfig" class="btn btn-secondary" type="button">Config API</button>
+          <button id="adminRefresh" class="btn btn-secondary" type="button">Actualizar</button>
+        </div>
+      </div>
+
+      <div id="adminError" class="error-banner hidden" role="alert"></div>
+
+      <section class="overview-strip executive" aria-label="Guía rápida">
+        <div class="overview-card emphasis">
+          <div class="eyebrow">Lectura rápida</div>
+          <h2>Panel para decidir en segundos</h2>
+          <p>Arriba ves volumen general. Luego estado de equipos. Finalmente, los reactivos e incidencias recientes.</p>
+        </div>
+        <div class="overview-card compact">
+          <div class="eyebrow">Interpretación</div>
+          <ul class="legend-list compact">
+            <li><span class="dot red"></span> En uso</li>
+            <li><span class="dot amber"></span> Reservado</li>
+            <li><span class="dot green"></span> Libre</li>
+          </ul>
+          <div class="mini-note">Fuente: Google Sheets + Apps Script del LPN.</div>
+        </div>
+      </section>
+
+      <div class="dash executive-dash">
+        <section class="dash-section" aria-label="Resumen general">
+          <div class="dash-head">
+            <div>
+              <h2>Resumen general</h2>
+              <p>Indicadores principales del laboratorio</p>
+            </div>
+          </div>
+          <div class="dash-body">
+            <div class="kpi-row executive-kpis">
+              <div class="kpi-tile accent-blue"><div class="label">Solicitudes totales</div><div class="value" id="kpiTotalRequests">0</div></div>
+              <div class="kpi-tile accent-red"><div class="label">Equipos en uso</div><div class="value" id="kpiEquipmentInUseNow">0</div></div>
+              <div class="kpi-tile accent-pink"><div class="label">Usos de reactivos</div><div class="value" id="kpiReagentsUseEvents">0</div></div>
+              <div class="kpi-tile accent-green"><div class="label">Insumos activos</div><div class="value" id="kpiSuppliesActiveNow">0</div></div>
+              <div class="kpi-tile accent-dark"><div class="label">Usuarios únicos</div><div class="value" id="kpiUniqueUsers30d">0</div></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="executive-grid">
+          <section class="dash-section" aria-label="Actividad operativa">
+            <div class="dash-head">
+              <div>
+                <h2>Actividad operativa</h2>
+                <p>Evolución mensual de solicitudes y uso</p>
+              </div>
+            </div>
+            <div class="dash-body">
+              <div class="chart-box"><canvas id="chartOperational"></canvas></div>
+            </div>
+          </section>
+
+          <section class="dash-section" aria-label="Estado de equipos">
+            <div class="dash-head">
+              <div>
+                <h2>Estado de equipos</h2>
+                <p>Disponibilidad y carga actual</p>
+              </div>
+            </div>
+            <div class="dash-body">
+              <div class="resource-kpis executive-mini-grid">
+                <div class="mini"><div class="label">En uso</div><div class="value" id="equiposInUseNow">0</div></div>
+                <div class="mini"><div class="label">Libres</div><div class="value" id="equiposAvailable">—</div></div>
+                <div class="mini"><div class="label">Reservados</div><div class="value" id="equiposReserved">0</div></div>
+                <div class="mini"><div class="label">Estado general</div><div class="value" id="equiposStatusSummary">—</div></div>
+              </div>
+              <div style="height:10px"></div>
+              <div class="chart-box small"><canvas id="chartEquiposStatus"></canvas></div>
+            </div>
+          </section>
+        </div>
+
+        <section class="dash-section" aria-label="Reactivos">
+          <div class="dash-head">
+            <div>
+              <h2>Reactivos</h2>
+              <p>Consumo y solicitudes con foco en lo más relevante</p>
+            </div>
+          </div>
+          <div class="dash-body">
+            <div class="resource-kpis executive-mini-grid reagents-summary">
+              <div class="mini"><div class="label">Consumido (g)</div><div class="value" id="reagUsedG">0</div></div>
+              <div class="mini"><div class="label">Consumido (mL)</div><div class="value" id="reagUsedML">0</div></div>
+              <div class="mini"><div class="label">Solicitado (g)</div><div class="value" id="reagReqG">0</div></div>
+              <div class="mini"><div class="label">Solicitado (mL)</div><div class="value" id="reagReqML">0</div></div>
+            </div>
+            <div style="height:10px"></div>
+            <div class="badge" id="reagUnknownBadge" hidden></div>
+            <div class="executive-grid reagents-grid">
+              <div class="chart-box small"><canvas id="chartReactivosConsumedMass"></canvas></div>
+              <div class="chart-box small"><canvas id="chartReactivosRequestedVol"></canvas></div>
+            </div>
+            <div style="height:10px"></div>
+            <div class="table-wrap executive-table">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Reactivo</th>
+                    <th>Consumido (g)</th>
+                    <th>Consumido (mL)</th>
+                    <th>Solicitado (g)</th>
+                    <th>Solicitado (mL)</th>
+                    <th>Eventos uso</th>
+                  </tr>
+                </thead>
+                <tbody id="reagentsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <div class="executive-grid bottom-grid">
+          <section class="dash-section" aria-label="Usuarios">
+            <div class="dash-head">
+              <div>
+                <h2>Usuarios más activos</h2>
+                <p>Top rápido de actividad reciente</p>
+              </div>
+            </div>
+            <div class="dash-body">
+              <div class="chart-box small"><canvas id="chartUsersTop"></canvas></div>
+            </div>
+          </section>
+
+          <section class="dash-section" aria-label="Eventos recientes">
+            <div class="dash-head">
+              <div>
+                <h2>Eventos recientes</h2>
+                <p>Últimos movimientos relevantes</p>
+              </div>
+            </div>
+            <div class="dash-body">
+              <div id="recentEvents" class="events"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

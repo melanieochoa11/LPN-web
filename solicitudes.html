@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro y solicitudes – LPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- FontAwesome para iconos en las tarjetas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-xh6XeEg53+clgfnTiKD6R7Bd+P7ZfGb1C5W9z5lwCvEaG6l1bIWeO+JS1GQkl5AnB+bPTsYzDlh1QpSbgrcQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* FontAwesome icons inside our shared card-option */
+    .card-option i { font-size: 20px; }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="left">
+      <button id="solBackHome" class="back-btn" aria-label="Volver al inicio">←</button>
+      <h1>Registro y solicitudes</h1>
+    </div>
+    <div></div>
+  </header>
+  <main class="app-main">
+    <div class="container">
+      <div class="card">
+      <!-- Paso 1: Datos generales y selección de tipo -->
+      <section id="solStep1">
+        <h2>Datos del solicitante</h2>
+        <p class="help">Usaremos estos datos para prellenar los formularios.</p>
+        <div class="field">
+          <label for="solNombre">Nombre completo</label>
+          <input type="text" id="solNombre" placeholder="Nombre completo" required aria-required="true" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="solCorreo">Correo institucional</label>
+          <input type="email" id="solCorreo" placeholder="usuario@ikiam.edu.ec" required aria-required="true" autocomplete="email">
+        </div>
+        <div class="actions">
+          <button id="solContinuar" class="btn btn-primary" type="button">Continuar</button>
+        </div>
+      </section>
+      <!-- Paso 2: Formulario embebido -->
+      <section id="solStep2" class="hidden">
+        <button id="solBack" class="back-btn" type="button" aria-label="Regresar">←</button>
+        <!-- Contenedor de tarjetas de selección de tipo de solicitud -->
+        <div class="cards-select">
+          <div class="card-option" data-page="equipos.html">
+            <div class="icon" aria-hidden="true"><i class="fas fa-microscope"></i></div>
+            <div>
+              <h3>Equipos</h3>
+              <p>Reservar o registrar uso de equipos de laboratorio</p>
+            </div>
+          </div>
+          <div class="card-option" data-page="material.html">
+            <div class="icon" aria-hidden="true"><i class="fas fa-box-open"></i></div>
+            <div>
+              <h3>Materiales</h3>
+              <p>Solicitar insumos y material de laboratorio</p>
+            </div>
+          </div>
+          <div class="card-option" data-page="reactivos.html">
+            <div class="icon" aria-hidden="true"><i class="fas fa-flask"></i></div>
+            <div>
+              <h3>Reactivos</h3>
+              <p>Solicitar reactivos, incluidos controlados</p>
+            </div>
+          </div>
+          <div class="card-option" data-page="registro-uso.html">
+            <div class="icon" aria-hidden="true"><i class="fas fa-clipboard-list"></i></div>
+            <div>
+              <h3>Registro de uso</h3>
+              <p>Registrar prácticas, pasantías o tesis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </main>
+  <footer class="app-footer">
+    <p><strong>Contacto:</strong> melani.ochoa@ikiam.edu.ec</p>
+    <p><strong>Teléfono:</strong> 0959546317</p>
+    <p><strong>Ubicación:</strong> LPN - Laboratorio de Productos Naturales – Tena, Ecuador</p>
+  </footer>
+  <script type="module">
+    import { toast, validateRequired } from './js/ui-kit.js';
+
+    // Botón para volver al inicio
+    document.getElementById('solBackHome').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+    // Continuar a formulario específico
+    document.getElementById('solContinuar').addEventListener('click', () => {
+      const nombreEl = document.getElementById('solNombre');
+      const correoEl = document.getElementById('solCorreo');
+      if (!validateRequired([nombreEl, correoEl])) {
+        toast('Completa nombre y correo para continuar.', { type: 'error' });
+        return;
+      }
+      const nombre = nombreEl.value.trim();
+      const correo = correoEl.value.trim();
+      // Guardar datos en localStorage para precompletar formularios
+      try {
+        localStorage.setItem('nombreUsuario', nombre);
+        localStorage.setItem('correoUsuario', correo);
+      } catch (e) {}
+      // Mostrar tarjetas de selección de tipo
+      document.getElementById('solStep1').classList.add('hidden');
+      document.getElementById('solStep2').classList.remove('hidden');
+    });
+    // Botón para regresar al paso 1
+    document.getElementById('solBack').addEventListener('click', () => {
+      document.getElementById('solStep2').classList.add('hidden');
+      document.getElementById('solStep1').classList.remove('hidden');
+    });
+
+    // Cuando se muestran las tarjetas, asignar manejadores de clic a cada opción
+    document.querySelectorAll('.card-option').forEach(card => {
+      card.addEventListener('click', () => {
+        const page = card.dataset.page;
+        if (!page) return;
+        // Ya se guardaron nombre y correo en localStorage al pulsar Continuar
+        window.location.href = page;
+      });
+    });
+  </script>
+</body>
+</html>

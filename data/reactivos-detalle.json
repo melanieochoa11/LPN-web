@@ -1,0 +1,1775 @@
+[
+  {
+    "Nombre":"Thiamine Hydrochloride B1",
+    "Cantidad":1,
+    "Detalle":"100 mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1643673600000,
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Neochlorogenic acid (98.0%)",
+    "Cantidad":1,
+    "Detalle":"5mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"N,O-Bis(trimethylsilyl) trifluoro-acetamide (99%)",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Caffeine (standard)",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1575072000000,
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"3,5-Dinitrosalicylic acid (98%)",
+    "Cantidad":2,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Sodium 1-heptanesulfonate monohydrate (99.0%)",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"2-Deoxy-D-ribose (97%)",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Nicotinic acid (standard)",
+    "Cantidad":1,
+    "Detalle":"4g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Riboflavin (B2)",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1727740800000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"2,4,6-Tris(2-pyridyl)-s-triazine (98%)",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Rutina(standard)",
+    "Cantidad":1,
+    "Detalle":"0.5 mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"N,O-Bis(trimethylsilyl) trifluoroacetamide with trimethylchlorosilane",
+    "Cantidad":1,
+    "Detalle":"5 ML",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Potassium bromide (99.0%)",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"4-(Dimethylamino) benzaldehyde (99%)",
+    "Cantidad":1,
+    "Detalle":"25g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Iron(II) chloride tetrahydrate (99.0%)",
+    "Cantidad":1,
+    "Detalle":"50g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"2-Thiobarbituric acid (98%)",
+    "Cantidad":1,
+    "Detalle":"25g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Potassium persulfate (99.0%)",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Hamaline (95%)",
+    "Cantidad":1,
+    "Detalle":"300 mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"trans-Cinnamaldehyde (99%)",
+    "Cantidad":1,
+    "Detalle":"25g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Isorthamnetin (95%)",
+    "Cantidad":1,
+    "Detalle":"1mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Eugenol (99%)",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Verde de Bromocresol",
+    "Cantidad":1,
+    "Detalle":"5 g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":2027,
+    "Proyecto":"CEDIA-ricardo",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Kaempferol (97.0%)",
+    "Cantidad":1,
+    "Detalle":"10mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Verde de Bromocresol",
+    "Cantidad":1,
+    "Detalle":"5 g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":2027,
+    "Proyecto":"CEDIA-ricardo",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"MS calibration solution",
+    "Cantidad":1,
+    "Detalle":"30 ML",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"rutina(standard)",
+    "Cantidad":1,
+    "Detalle":"1 mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1809129600000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acido salicilico",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731801600000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Pyridoxine Hydrochloride B6",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1664582400000,
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Estradiol",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":172024,
+    "Proyecto":"Medicamentos",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Triclosan",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1696118400000,
+    "Proyecto":"Medicamentos",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Atropine",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1811721600000,
+    "Proyecto":"CEDIA-ricardo",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Butylated hydroxyanisole",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1753920000000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acido vanilico",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731801600000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Naringin",
+    "Cantidad":1,
+    "Detalle":"20mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1714521600000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acido shikimico",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731801600000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Luminol",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"kaempferol (97.0%)",
+    "Cantidad":1,
+    "Detalle":"25mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Rutina(standard)",
+    "Cantidad":1,
+    "Detalle":"25mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Galantamine hydrobromide",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1788134400000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Atropine",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1811721600000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Atropine",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1811721600000,
+    "Proyecto":"Guayusa",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acido cafeico",
+    "Cantidad":1,
+    "Detalle":5000,
+    "Estado":"abierto",
+    "Fecha de caducidad":1708819200000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"B-Sitosterol (70%)",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731888000000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Ethyl alcohol, pure 99.5%",
+    "Cantidad":2,
+    "Detalle":"500mL",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1730937600000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Sodium phosphate (96%)",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Phthalic anhydride (99%)",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Sodium chloride ACS",
+    "Cantidad":1,
+    "Detalle":"1kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GabRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Anthraquinone",
+    "Cantidad":1,
+    "Detalle":"250 g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731888000000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Ammonium dihydrogenphosphat",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1790812800000,
+    "Proyecto":"GabRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Gallic acid",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"DMSO",
+    "Cantidad":1,
+    "Detalle":"1L",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GabRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Tannic acid",
+    "Cantidad":1,
+    "Detalle":"80 g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acido tricloroacetico",
+    "Cantidad":1,
+    "Detalle":"1kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Ethyl alcohol, pure 99.5%",
+    "Cantidad":1,
+    "Detalle":"100 ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":1730937600000,
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"fosfato de potasio tribasico",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"ammonium persulfate 98%",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Coumarin",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1731888000000,
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Linalool 97%",
+    "Cantidad":1,
+    "Detalle":"50 ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"fosfato de potasio dibasico",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Buffer solution",
+    "Cantidad":1,
+    "Detalle":"1 L",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Di sodium hydrogen phosohate",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Theophylline",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1711929600000,
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Vitamina B5",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"2,4,6-Tris (2-pyridyl)-s-triazine",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Methyl cinnamate",
+    "Cantidad":1,
+    "Detalle":"250mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"1-fluoro 2-4 dinitrobenzene",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Acrylamide",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP1"
+  },
+  {
+    "Nombre":"Boric acid",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1733011200000,
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Sodium chloride ACS",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Kjeldahl tablets",
+    "Cantidad":1,
+    "Detalle":"20 tabletas",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Folin Ciocalteu",
+    "Cantidad":1,
+    "Detalle":"100ml",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Potassium chromate",
+    "Cantidad":1,
+    "Detalle":"250g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Nitrato de Plata",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1706745600000,
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Copper II sulfate pentahydrate",
+    "Cantidad":1,
+    "Detalle":"250g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1769904000000,
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Phenolphthalein in solution 1%",
+    "Cantidad":1,
+    "Detalle":"1l",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Sodium chloride ACS",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Ammonium sulfate",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1746057600000,
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Potasium iodide",
+    "Cantidad":1,
+    "Detalle":"250g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1754006400000,
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Mercury II iodide",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Potassium sulfate",
+    "Cantidad":1,
+    "Detalle":"1kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Glicerol",
+    "Cantidad":1,
+    "Detalle":"800ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Quercetin",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Gallic acid",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Choline chloride",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Methyl red pure",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Resorcinol",
+    "Cantidad":1,
+    "Detalle":"90 g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Agua de peptona tamponada",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Methyl red pure",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Arajuno",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Silica gel indicador",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Acido fòrmico",
+    "Cantidad":1,
+    "Detalle":"",
+    "Estado":"",
+    "Fecha de caducidad":"",
+    "Proyecto":"CEDIA-ricardo",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"acido oxàlico 99.8",
+    "Cantidad":1,
+    "Detalle":"",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"3-5 Dinitrobenzoic acid 99%",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Folin Ciocalteu",
+    "Cantidad":1,
+    "Detalle":"500ml",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"1-naftol 99%",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":1746057600000,
+    "Proyecto":"karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"2-2 azobis (2-methyl-propionamidine) dihydrochloride 97%",
+    "Cantidad":1,
+    "Detalle":"25g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Octadecyl functionalized silica gel",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Folic acid 87%",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Sodium nitrate",
+    "Cantidad":1,
+    "Detalle":"1 kg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Fluorescein",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Tin (II) chloride\/cloruro de estaño(II)",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Diaion HP-20",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"L-glutamine",
+    "Cantidad":1,
+    "Detalle":"250g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Magnesium oxide",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Floroglucina",
+    "Cantidad":1,
+    "Detalle":"100g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Muller hinton broth",
+    "Cantidad":2,
+    "Detalle":"500g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Cajon RP2"
+  },
+  {
+    "Nombre":"Acarbose",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"guayusa",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Acarbose",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"hongos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"ABTS",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Yanet",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"ABTS",
+    "Cantidad":1,
+    "Detalle":"5G",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Trolox",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Cedia-ricardo",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"DPPH",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"guayusa",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"ABTS",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Cedia-ricardo",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"DPPH",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"DPPH",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"DPPH",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Jan",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"DPPH",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"ABTS",
+    "Cantidad":1,
+    "Detalle":"2G",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"ABTS",
+    "Cantidad":1,
+    "Detalle":"10mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"ikiam",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"caffeine",
+    "Cantidad":1,
+    "Detalle":"250mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Theobormina",
+    "Cantidad":2,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Epicatechin",
+    "Cantidad":4,
+    "Detalle":"5mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"L-theanine 98%",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"2,3,5 TRIPHENYL-TETRAZOLIUMCHLORID",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Oleanolic acid",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Methyl tetracosanoate",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Catechin hydrate",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"LPN",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Oxytetracycline hydrochloride",
+    "Cantidad":1,
+    "Detalle":"250mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1740787200000,
+    "Proyecto":"Medicamentos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Imidacloprid",
+    "Cantidad":2,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1756684800000,
+    "Proyecto":"Medicamentos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Tetracycline hydrochloride",
+    "Cantidad":1,
+    "Detalle":"250mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1738368000000,
+    "Proyecto":"Medicamentos",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Theobromine",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1704067200000,
+    "Proyecto":"Karana",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Catechin",
+    "Cantidad":1,
+    "Detalle":"50mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1706745600000,
+    "Proyecto":"Karana",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Catechin",
+    "Cantidad":1,
+    "Detalle":"1mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1706745600000,
+    "Proyecto":"Karana",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Epichatechin",
+    "Cantidad":1,
+    "Detalle":"1mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Cinnamaldehyde",
+    "Cantidad":1,
+    "Detalle":"25mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Theophylline",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":1711929600000,
+    "Proyecto":"guayusa",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Thebromine",
+    "Cantidad":1,
+    "Detalle":"10mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":1759276800000,
+    "Proyecto":"guayusa",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"caffeine",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"guayusa",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Amoxicilin",
+    "Cantidad":1,
+    "Detalle":"200mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Cefixime",
+    "Cantidad":1,
+    "Detalle":"500mg",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Ketoprofen",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Ibuprofen 98%",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"amino acid standard",
+    "Cantidad":2,
+    "Detalle":"5ml",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-4C"
+  },
+  {
+    "Nombre":"Acetylcholineterase",
+    "Cantidad":1,
+    "Detalle":"500U",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Phenazine methosulfate",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Glucosidase",
+    "Cantidad":1,
+    "Detalle":"100U",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Glucosidase",
+    "Cantidad":1,
+    "Detalle":"100U",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Proteinase K",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hongos",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Qualititive retention index",
+    "Cantidad":2,
+    "Detalle":"1ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Mariposas",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Linoleic acid",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"B nicotinamide adenine dinucleotide",
+    "Cantidad":1,
+    "Detalle":"100mg",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"GABRIELA AECID",
+    "Ubicación":"Refri-20C"
+  },
+  {
+    "Nombre":"Cloruro de Hierro hexahidratado",
+    "Cantidad":1,
+    "Detalle":"50g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Karana",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Pyridine",
+    "Cantidad":1,
+    "Detalle":"100ml",
+    "Estado":"cerrado",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Quercetina",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Guayusa",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Fosfato Dipotasico",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Carbonato de sodio",
+    "Cantidad":1,
+    "Detalle":"7g",
+    "Estado":"aliicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Cloruro de sodio",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"NaOH",
+    "Cantidad":1,
+    "Detalle":"8g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Acido citrico",
+    "Cantidad":1,
+    "Detalle":"20g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Fosfato de potasio monodibasico",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Fosfato de potasio dibasico",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Nitrato de sodio",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Cloruro de sodio",
+    "Cantidad":1,
+    "Detalle":"50mg",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Acido oxalico",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Nitrato de sodio",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"D-fructosa",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"D-glucosa",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Acido acetilsalicilico",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Sulfato de magnesio",
+    "Cantidad":1,
+    "Detalle":"20mg",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Acido bòrico",
+    "Cantidad":1,
+    "Detalle":"",
+    "Estado":"",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Hidroxido de sodio",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Acido malico",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Sulfato de sodio",
+    "Cantidad":1,
+    "Detalle":"25g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"acido malico",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Fosfato monopotasico",
+    "Cantidad":1,
+    "Detalle":"3g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Cafeina",
+    "Cantidad":1,
+    "Detalle":"1g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Desecador"
+  },
+  {
+    "Nombre":"Petroleum benzine",
+    "Cantidad":1,
+    "Detalle":"",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Gallic acid",
+    "Cantidad":1,
+    "Detalle":"50g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Cloruro de sodio",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Persulfato de amonio",
+    "Cantidad":1,
+    "Detalle":"500g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Hexane grado cromatogràfico",
+    "Cantidad":1,
+    "Detalle":"3L",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"L-ascorbic acid",
+    "Cantidad":1,
+    "Detalle":"900g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Petroleum ether",
+    "Cantidad":1,
+    "Detalle":"100ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"LATIN INSECT",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Hexane for analysis",
+    "Cantidad":1,
+    "Detalle":"2L",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Acetona",
+    "Cantidad":1,
+    "Detalle":"2L",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Hi water",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Ethyl alcohol pure",
+    "Cantidad":1,
+    "Detalle":"20ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Ter-butanol 99.5%",
+    "Cantidad":1,
+    "Detalle":"90ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Cloruro de hierro III",
+    "Cantidad":1,
+    "Detalle":"500G",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Acetato de etilo",
+    "Cantidad":1,
+    "Detalle":"",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Diclorometano",
+    "Cantidad":1,
+    "Detalle":"700ml",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Mariposas",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Acetato de sodio",
+    "Cantidad":1,
+    "Detalle":"5g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Oxido de magnesio",
+    "Cantidad":1,
+    "Detalle":"50g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Acetato de sodio anhidro",
+    "Cantidad":1,
+    "Detalle":"10 g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Heptano grado HPLC",
+    "Cantidad":1,
+    "Detalle":"4l",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"Zulay",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Sulfato de magnesio",
+    "Cantidad":1,
+    "Detalle":"10g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Silica gel indicador",
+    "Cantidad":1,
+    "Detalle":"800g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Alcanfor",
+    "Cantidad":1,
+    "Detalle":"2 g",
+    "Estado":"alicuota",
+    "Fecha de caducidad":"",
+    "Proyecto":"",
+    "Ubicación":"Armario"
+  },
+  {
+    "Nombre":"Sulfato de hierro heptahidratado",
+    "Cantidad":1,
+    "Detalle":"800g",
+    "Estado":"abierto",
+    "Fecha de caducidad":"",
+    "Proyecto":"IKIAM",
+    "Ubicación":"Armario"
+  }
+]

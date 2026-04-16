@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material de laboratorio – LPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="left">
+      <button id="backHomeMat" class="back-btn" aria-label="Volver">←</button>
+      <img class="logo" src="logo.png" alt="Logo del laboratorio" loading="lazy">
+      <h1>Material de laboratorio</h1>
+    </div>
+    <img class="brand" src="ikiam-logo.png" alt="Ikiam" loading="lazy">
+  </header>
+  <main class="app-main">
+    <div class="container">
+    <!-- Paso 1: Búsqueda -->
+    <div class="card" id="matStep1">
+      <h2>Búsqueda de material</h2>
+      <p class="help">Selecciona el material, luego elige si es solicitud o registro de uso.</p>
+      <div class="field">
+        <label for="matBusqueda">Material</label>
+        <input type="text" id="matBusqueda" list="materialList" placeholder="Escribe o selecciona el material" autocomplete="off">
+      </div>
+      <datalist id="materialList"></datalist>
+      <div class="actions">
+        <button id="buscarMaterialBtn" class="btn btn-primary" type="button">Buscar</button>
+      </div>
+    </div>
+    <!-- Paso 2: Detalle y acción -->
+    <div class="card hidden" id="matStep2">
+      <h2 id="matNombre">Material</h2>
+      <div class="step-layout">
+        <div class="details">
+          <div class="field">
+            <label for="matAccion">Tipo de accion</label>
+            <select id="matAccion">
+            <option value="">– selecciona –</option>
+            <option value="Solicitud">Solicitud</option>
+            <option value="Registro">Registro</option>
+            </select>
+          </div>
+          <!-- Solicitud form -->
+          <div id="matFormSolicitud" class="hidden">
+            <div class="field">
+              <label for="matRango">Rango de fechas</label>
+              <input type="text" id="matRango" placeholder="Selecciona rango" readonly>
+            </div>
+            <div class="field">
+              <label for="matCantidadSol">Cantidad</label>
+              <input type="number" id="matCantidadSol" min="0" step="0.1" placeholder="Cantidad">
+            </div>
+          </div>
+          <!-- Registro form (solo fecha de uso y cantidad) -->
+          <div id="matFormRegistro" class="hidden">
+            <div class="field">
+              <label for="matFechaUso">Fecha de uso</label>
+              <input type="text" id="matFechaUso" placeholder="dd/mm/aaaa" readonly>
+            </div>
+            <div class="field">
+              <label for="matCantidadReg">Cantidad</label>
+              <input type="number" id="matCantidadReg" min="0" step="0.1" placeholder="Cantidad">
+            </div>
+          </div>
+          <!-- Grupo de actividad (se muestra para Solicitud y Registro) -->
+          <div id="matActividadGroup" class="hidden">
+            <div class="field">
+              <label for="matActividad">Actividad</label>
+              <select id="matActividad">
+              <option value="">– selecciona –</option>
+              <option value="Práctica de laboratorio">Práctica de laboratorio</option>
+              <option value="Proyecto">Proyecto</option>
+              <option value="Tesis">Tesis</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="matDescripcion">Descripcion</label>
+              <input type="text" id="matDescripcion" placeholder="Que se va a realizar">
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <img class="catalog" id="matImg" src="" alt="Imagen del material" loading="lazy">
+        </div>
+      </div>
+      <div class="actions">
+        <button id="matCancelStep2" class="btn btn-secondary" type="button">Cancelar</button>
+        <button id="matAddBtn" class="btn btn-secondary" type="button">Agregar otro</button>
+        <button id="matFinalizarBtn" class="btn btn-primary" type="button">Finalizar</button>
+      </div>
+    </div>
+    <!-- Paso 3: Resumen y datos generales -->
+    <div class="card hidden" id="matStep3">
+      <h2>Resumen de materiales</h2>
+      <div id="matResumen" class="summary"></div>
+      <div class="field">
+        <label for="matNombreUsuario">Nombre</label>
+        <input type="text" id="matNombreUsuario" placeholder="Nombre completo" required>
+      </div>
+      <div class="field">
+        <label for="matCorreoUsuario">Correo institucional</label>
+        <input type="email" id="matCorreoUsuario" placeholder="usuario@ikiam.edu.ec" required>
+      </div>
+      <div class="field">
+        <label for="matObsUsuario">Observaciones</label>
+        <textarea id="matObsUsuario" rows="3" placeholder="Observaciones"></textarea>
+      </div>
+      <div class="actions">
+        <button id="matBackToSearch" class="btn btn-secondary" type="button">Volver</button>
+        <button id="matEnviar" class="btn btn-primary" type="button">Enviar</button>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="app-footer">
+    <p><strong>Contacto:</strong> melani.ochoa@ikiam.edu.ec</p>
+    <p><strong>Teléfono:</strong> 0959546317</p>
+    <p><strong>Ubicación:</strong> LPN - Laboratorio de Productos Naturales – Tena, Ecuador</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Importamos el módulo desde la carpeta js -->
+  <script type="module" src="js/material.js"></script>
+</body>
+</html>

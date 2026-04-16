@@ -1,0 +1,32 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - button "Volver" [ref=e4] [cursor=pointer]: ←
+      - img "Logo del laboratorio" [ref=e5]
+      - heading "Equipos" [level=1] [ref=e6]
+    - img "Ikiam" [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e25]:
+      - heading "Prueba" [level=2] [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: Tipo de accion
+          - combobox "Tipo de accion" [ref=e31]:
+            - option "– selecciona –" [selected]
+            - option "Solicitud"
+            - option "Registro"
+        - img "Imagen del equipo" [ref=e33]
+      - generic [ref=e34]:
+        - button "Cancelar" [ref=e35] [cursor=pointer]
+        - button "Agregar otro" [ref=e36] [cursor=pointer]
+        - button "Finalizar" [ref=e37] [cursor=pointer]
+  - contentinfo [ref=e18]:
+    - paragraph [ref=e19]:
+      - strong [ref=e20]: "Contacto:"
+      - text: melani.ochoa@ikiam.edu.ec
+    - paragraph [ref=e21]:
+      - strong [ref=e22]: "Teléfono:"
+      - text: "0959546317"
+    - paragraph [ref=e23]:
+      - strong [ref=e24]: "Ubicación:"
+      - text: LPN - Laboratorio de Productos Naturales – Tena, Ecuador

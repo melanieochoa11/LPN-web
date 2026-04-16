@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPN - Laboratorio de Productos Naturales – Inicio</title>
+  <!-- Fuente principal (mas amigable) -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #007bff;
+      --primary-dark: #0056b3;
+      --bg-glass: rgba(255, 255, 255, 0.4);
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Manrope', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      /* Fondo con imagen difuminada para armonizar con el resto de páginas */
+      background: url('fondo.png') no-repeat center/cover fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      /* Vidrio translúcido similar a otras páginas */
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Compensa el header fixed (se ajusta por JS) */
+    body { padding-top: 74px; }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .header-left img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+    }
+    .header-left h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: #001d3a;
+      font-weight: 500;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .header-right img {
+      width: 70px;
+      object-fit: contain;
+    }
+    /* Accesos principales van en el bloque hero (no duplicar botones) */
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1.25rem 1rem 2rem;
+    }
+    .home-wrap {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .left-stack {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 1.25rem;
+      min-height: 560px;
+    }
+
+    .calendar-section {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+
+    .calendar-frame {
+      width: 100%;
+      height: 560px;
+      border: 0;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    @media (max-width: 920px) {
+      .calendar-frame { height: 520px; }
+      .left-stack { min-height: auto; }
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #555;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    @media (max-width: 920px) {
+      .home-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Sección de noticias */
+    .news-section {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+
+    .news-scroll {
+      max-height: 340px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .news-scroll::-webkit-scrollbar { width: 10px; }
+    .news-scroll::-webkit-scrollbar-thumb {
+      background: rgba(0, 29, 58, 0.18);
+      border-radius: 999px;
+    }
+    .news-scroll::-webkit-scrollbar-track { background: transparent; }
+    #news-list article {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    #news-list h3 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.1rem;
+      color: #001d3a;
+    }
+    #news-list time {
+      display: block;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* Bloque visual (sin 3D) */
+    .hero {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.35);
+      position: relative;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1rem;
+      padding: 1.25rem;
+      align-items: center;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: #001d3a;
+      font-weight: 600;
+    }
+
+    .hero p {
+      margin: 0.5rem 0 0;
+      color: rgba(0, 29, 58, 0.78);
+      line-height: 1.35;
+    }
+
+    .hero-actions {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .hero-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0.65rem;
+      text-decoration: none;
+      color: #fff;
+      background: var(--primary);
+      box-shadow: var(--shadow);
+      transition: transform 0.15s ease, background 0.3s ease;
+      font-weight: 500;
+    }
+
+    .hero-actions a.secondary { background: rgba(0, 86, 179, 0.92); }
+
+    .hero-actions a:hover,
+    .hero-actions a:focus {
+      transform: translateY(-1px);
+      background: var(--primary-dark);
+    }
+
+    .hero-art {
+      width: 100%;
+      height: 200px;
+      border-radius: 0.75rem;
+      background:
+        radial-gradient(120px 120px at 25% 35%, rgba(0, 123, 255, 0.45), rgba(0, 123, 255, 0) 70%),
+        radial-gradient(160px 160px at 75% 40%, rgba(255, 92, 92, 0.25), rgba(255, 92, 92, 0) 70%),
+        radial-gradient(220px 160px at 50% 80%, rgba(0, 29, 58, 0.14), rgba(0, 29, 58, 0) 70%),
+        linear-gradient(135deg, rgba(255,255,255,0.55), rgba(255,255,255,0.20));
+      border: 1px solid rgba(255,255,255,0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      inset: -40px;
+      background: url('fondo_chat.png') no-repeat center/cover;
+      opacity: 0.22;
+      transform: rotate(-2deg);
+      filter: saturate(1.05);
+    }
+
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.0));
+    }
+
+    @media (max-width: 720px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+      .hero-art {
+        height: 180px;
+      }
+    }
+
+    /* Aviso emergente */
+    .aviso {
+      width: 100%;
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .aviso-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .aviso-icon {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .aviso-cerrar {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #333;
+      margin-left: auto;
+    }
+  </style>
+  <!-- Sin animaciones 3D -->
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Logo del laboratorio" loading="lazy">
+      <h1>LPN - Laboratorio de Productos Naturales</h1>
+    </div>
+    <div class="header-right">
+      <!-- Reemplaza con el logo de Ikiam correspondiente -->
+      <img src="ikiam-logo.png" alt="Ikiam" loading="lazy">
+    </div>
+  </header>
+  <!--
+    La página de inicio ahora presenta un diseño simplificado. En la parte superior se
+    muestran dos opciones: un enlace pequeño a la hoja de inventario y un enlace
+    principal al apartado de registros/solicitudes. En el centro de la página se
+    muestran noticias o anuncios del laboratorio, que se cargan dinámicamente desde
+    un fichero JSON llamado `news.json`. Para actualizar los anuncios, edite el
+    contenido de `news.json` en el repositorio.
+  -->
+  <main>
+    <div class="home-wrap">
+      <div class="left-stack">
+        <!-- 1. Bienvenida -->
+        <section class="hero" aria-label="Bienvenida">
+          <div class="hero-inner" style="grid-template-columns: 1fr;">
+            <div>
+              <h2>Bienvenido/a al LPN - Laboratorio de Productos Naturales</h2>
+              <p>Realiza solicitudes y registra usos de equipos, materiales y reactivos.</p>
+              <div class="hero-actions">
+                <a href="solicitudes.html">Ir a formularios</a>
+                <a class="secondary" href="https://docs.google.com/spreadsheets/d/1P82F40dJGgVr0CL7TM_Nt4hiDqBidalW/edit?pli=1&gid=1381514532#gid=1381514532" target="_blank" rel="noopener">Ver inventario</a>
+              </div>
+            </div>
+            <div class="hero-art" aria-hidden="true" style="height: 140px;"></div>
+          </div>
+        </section>
+
+        <!-- 3. Noticias (scroll) -->
+        <section id="news" class="news-section" aria-live="polite">
+          <h2>Noticias del laboratorio</h2>
+          <div id="news-list" class="news-scroll">
+            <!-- Las noticias se insertarán aquí mediante JavaScript. -->
+          </div>
+        </section>
+      </div>
+
+      <!-- 2. Calendario (grande a la derecha) -->
+      <section id="calendar" class="calendar-section" aria-label="Calendario">
+        <h2>Calendario</h2>
+        <p style="margin:0.25rem 0 0.75rem;color:#555;">Reservas y uso del laboratorio.</p>
+        <iframe
+          class="calendar-frame"
+          title="Calendario del laboratorio"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          src="https://calendar.google.com/calendar/embed?src=c_3e66be30c74e5bec0b8b89bfd9bcce1bb7055482f9027d5b51d3a477f65fa6e3%40group.calendar.google.com&ctz=America%2FGuayaquil&mode=AGENDA&showTitle=0&showTabs=0&showPrint=0&showCalendars=0&showTz=0">
+        </iframe>
+      </section>
+    </div>
+  </main>
+  <!-- Aviso emergente -->
+  <div id="aviso" class="aviso">
+    <div class="aviso-content">
+      <img src="aviso_icon.png" alt="Icono de aviso" class="aviso-icon" loading="lazy">
+      <p id="avisoTexto">Por favor, recuerde devolver el material limpio y en buen estado.</p>
+      <button id="avisoCerrar" class="aviso-cerrar" aria-label="Cerrar aviso">×</button>
+    </div>
+  </div>
+  <footer>
+    <p><strong>Contacto:</strong> melani.ochoa@ikiam.edu.ec</p>
+    <p><strong>Teléfono:</strong> 0959546317</p>
+    <p><strong>Ubicación:</strong> LPN - Laboratorio de Productos Naturales – Tena, Ecuador</p>
+  </footer>
+  <script>
+    // Muestra u oculta el aviso según si ya fue cerrado en la sesión
+    (function() {
+      const avisoEl = document.getElementById('aviso');
+      const avisoCerrar = document.getElementById('avisoCerrar');
+      // Comprueba si el aviso se ha cerrado anteriormente
+      if (sessionStorage.getItem('avisoCerrado')) {
+        avisoEl.style.display = 'none';
+      }
+      avisoCerrar.addEventListener('click', () => {
+        avisoEl.style.display = 'none';
+        sessionStorage.setItem('avisoCerrado', '1');
+      });
+    })();
+  </script>
+
+  <script>
+    // Header fixed: set padding-top dynamically to avoid jumps.
+    (function() {
+      const header = document.querySelector('header');
+      if (!header) return;
+      const apply = () => {
+        const h = header.getBoundingClientRect().height;
+        document.body.style.paddingTop = `${Math.ceil(h)}px`;
+      };
+      apply();
+      window.addEventListener('resize', apply);
+    })();
+  </script>
+
+  <!-- Script para cargar dinámicamente las noticias desde news.json -->
+  <script>
+    // Lee el archivo news.json y muestra las noticias en la sección central.
+    fetch('news.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Respuesta no válida');
+        return response.json();
+      })
+      .then(data => {
+        const newsList = document.getElementById('news-list');
+        if (!newsList) return;
+        if (!Array.isArray(data) || data.length === 0) {
+          newsList.innerHTML = '<p>No hay noticias disponibles.</p>';
+          return;
+        }
+        // Ordenar las noticias por fecha descendente (más recientes primero)
+        data.sort((a, b) => (a.date < b.date ? 1 : -1));
+        data.forEach(item => {
+          const article = document.createElement('article');
+          const title = document.createElement('h3');
+          title.textContent = item.title;
+          const dateEl = document.createElement('time');
+          dateEl.textContent = item.date;
+          const content = document.createElement('p');
+          content.textContent = item.content;
+          article.appendChild(title);
+          article.appendChild(dateEl);
+          article.appendChild(content);
+          newsList.appendChild(article);
+        });
+      })
+      .catch(() => {
+        const newsList = document.getElementById('news-list');
+        if (newsList) newsList.innerHTML = '<p>Error al cargar las noticias.</p>';
+      });
+  </script>
+
+</body>
+</html>
