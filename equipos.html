@@ -64,12 +64,32 @@
             <div id="ocupacionInfo" class="ocupacion-info"></div>
             <div id="ocupacionDetalle" class="ocupacion-detalle hidden"></div>
           </div>
-          <!-- Formulario para Registro (solo fecha de uso) -->
+          <!-- Formulario para Registro -->
           <div id="formRegistro" class="hidden">
             <div class="field">
-              <label for="registroFecha">Fecha de uso</label>
-              <input type="text" id="registroFecha" placeholder="dd/mm/aaaa" readonly>
+              <label for="registroRango">Rango de uso (inicio - fin)</label>
+              <input type="text" id="registroRango" placeholder="Selecciona rango" readonly>
             </div>
+            <div class="time-grid">
+              <div class="field">
+                <label for="registroHoraInicio">Hora de inicio</label>
+                <input type="time" id="registroHoraInicio" min="07:00" max="20:00" step="1800">
+              </div>
+              <div class="field">
+                <label for="registroHoraFin">Hora de fin</label>
+                <input type="time" id="registroHoraFin" min="07:00" max="20:00" step="1800">
+              </div>
+            </div>
+            <div class="field">
+              <label for="registroTipo">Tipo de registro</label>
+              <select id="registroTipo">
+              <option value="">– selecciona –</option>
+              <option value="Practica">Práctica de lab o Cátedra</option>
+              <option value="Pasantia">Pasantías</option>
+              <option value="Tesis">Tesis/Proyectos</option>
+              </select>
+            </div>
+            <div id="registroTipoDetalle" class="hidden"></div>
           </div>
           <!-- Grupo de actividad (se muestra para Solicitud y Registro) -->
           <div id="equipoActividadGroup" class="hidden">

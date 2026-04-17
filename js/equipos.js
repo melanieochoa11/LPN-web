@@ -19,8 +19,12 @@ const solicitudHoraInicio = document.getElementById('solicitudHoraInicio');
 const solicitudHoraFin = document.getElementById('solicitudHoraFin');
 const ocupacionInfo   = document.getElementById('ocupacionInfo');
 const ocupacionDetalle = document.getElementById('ocupacionDetalle');
-const registroFecha   = document.getElementById('registroFecha');
-// Nuevo grupo de actividad que se muestra para Solicitud y Registro
+const registroRango   = document.getElementById('registroRango');
+const registroHoraInicio = document.getElementById('registroHoraInicio');
+const registroHoraFin = document.getElementById('registroHoraFin');
+const registroTipo = document.getElementById('registroTipo');
+const registroTipoDetalle = document.getElementById('registroTipoDetalle');
+// Nuevo grupo de actividad que se muestra para Solicitud
 const equipoActividadGroup = document.getElementById('equipoActividadGroup');
 const equipoActividad = document.getElementById('equipoActividad');
 const equipoDescripcion = document.getElementById('equipoDescripcion');
@@ -102,9 +106,16 @@ function resetStep2() {
   ocupacionDetalle.classList.add('hidden');
   solicitudHoraInicio.value = '';
   solicitudHoraFin.value = '';
+  registroHoraInicio.value = '';
+  registroHoraFin.value = '';
   if (fpSolicitud) { fpSolicitud.destroy(); fpSolicitud = null; }
   if (fpRegistro) { fpRegistro.destroy(); fpRegistro = null; }
-  // Limpiar campos de actividad
+  if (registroTipo) registroTipo.value = '';
+  if (registroTipoDetalle) {
+    registroTipoDetalle.innerHTML = '';
+    registroTipoDetalle.classList.add('hidden');
+  }
+  // Limpiar campos de actividad de solicitud
   equipoActividad.value = '';
   equipoDescripcion.value = '';
   equipoActividadGroup.classList.add('hidden');
@@ -132,9 +143,8 @@ equipoAccionSel.addEventListener('change', async () => {
   // Siempre reiniciamos el paso 2 antes de mostrar el formulario correspondiente
   resetStep2();
   if (!action) return;
-  // Mostrar grupo de actividad para ambas acciones
-  equipoActividadGroup.classList.remove('hidden');
   if (action === 'Solicitud') {
+    equipoActividadGroup.classList.remove('hidden');
     formSolicitudDiv.classList.remove('hidden');
     // Restablecer banderas y rangos ocupados
     solicitudConflicto = false;
@@ -176,9 +186,15 @@ equipoAccionSel.addEventListener('change', async () => {
     });
   } else if (action === 'Registro') {
     formRegistroDiv.classList.remove('hidden');
-    // Initialize single date picker para el registro de uso
-    fpRegistro = flatpickr(registroFecha, { dateFormat: 'd/m/Y' });
+    fpRegistro = flatpickr(registroRango, {
+      mode: 'range',
+      dateFormat: 'd/m/Y'
+    });
   }
+});
+
+registroTipo.addEventListener('change', () => {
+  buildRegistroDetalle_(registroTipo.value);
 });
 
 // Cancel button in step2
@@ -258,19 +274,35 @@ function processCurrentEquipo() {
       descripcion: desc
     });
   } else if (action === 'Registro') {
-    const fechaUso = registroFecha.value;
-    const act = equipoActividad.value;
-    const desc = equipoDescripcion.value;
-    if (!fechaUso || !act || !desc) {
-      toast('Complete la fecha de uso, la actividad y la descripcion.', { type: 'error' });
+    const rango = registroRango.value;
+    const detalle = collectRegistroDetalle_();
+    const horaInicio = registroHoraInicio.value;
+    const horaFin = registroHoraFin.value;
+    if (!rango || !horaInicio || !horaFin || !detalle) {
+      toast('Complete el rango, las horas y los datos del registro.', { type: 'error' });
+      return false;
+    }
+    let fechas = rango.split(/\s*(?:to|a)\s*/);
+    if (fechas.length < 2) fechas = rango.split(' ');
+    const inicio = parseFechaEquipo(fechas[0]);
+    const fin = parseFechaEquipo(fechas[1] || fechas[0]);
+    if (horaFin <= horaInicio && inicio === fin) {
+      toast('La hora de fin debe ser posterior a la hora de inicio.', { type: 'error' });
       return false;
     }
     cart.push({
       tipo: 'Uso de equipo',
       equipo: currentEquipo,
-      fechaUsoEquipo: parseFechaEquipo(fechaUso),
-      actividad: act,
-      descripcion: desc
+      fechaUsoEquipo: inicio,
+      fechaUsoEquipoFin: fin,
+      horaInicio: horaInicio,
+      horaFin: horaFin,
+      actividad: detalle.actividad,
+      descripcion: [
+        `Rango de uso: ${formatDate(inicio)} a ${formatDate(fin)}`,
+        `Horario: ${horaInicio} - ${horaFin}`,
+        detalle.descripcion
+      ].filter(Boolean).join('; ')
     });
   }
   return true;
@@ -293,7 +325,7 @@ function renderSummary_() {
     if (item.tipo === 'Solicitud de Equipos') {
       meta = `Solicitud (${formatDate(item.fechaInicial)} a ${formatDate(item.fechaFinal)}, ${item.horaInicio || '--:--'}-${item.horaFin || '--:--'}) - ${escapeHtml_(item.actividad || '')}`;
     } else {
-      meta = `Registro el ${formatDate(item.fechaUsoEquipo)} - ${escapeHtml_(item.actividad || '')}`;
+      meta = `Registro (${formatDate(item.fechaUsoEquipo)} a ${formatDate(item.fechaUsoEquipoFin || item.fechaUsoEquipo)}, ${item.horaInicio || '--:--'}-${item.horaFin || '--:--'}) - ${escapeHtml_(item.actividad || '')} - ${escapeHtml_(item.descripcion || '')}`;
     }
     html += `
       <li>
@@ -515,4 +547,118 @@ function normalizeTime_(value, fallback) {
 function combineDateTimeLocal_(date, hhmm) {
   const [hours, minutes] = String(hhmm || '00:00').split(':').map(Number);
   return new Date(date.getFullYear(), date.getMonth(), date.getDate(), hours || 0, minutes || 0, 0, 0);
+}
+
+function buildRegistroDetalle_(tipo) {
+  registroTipoDetalle.innerHTML = '';
+  registroTipoDetalle.classList.add('hidden');
+  if (!tipo) return;
+
+  let html = '';
+  if (tipo === 'Practica') {
+    html = `
+      <div class="field">
+        <label for="registroAsignatura">Asignatura</label>
+        <input type="text" id="registroAsignatura" required aria-required="true" placeholder="Asignatura">
+      </div>
+      <div class="time-grid">
+        <div class="field">
+          <label for="registroHoraInicial">Hora inicial</label>
+          <input type="time" id="registroHoraInicial" required aria-required="true">
+        </div>
+        <div class="field">
+          <label for="registroHoraFinal">Hora final</label>
+          <input type="time" id="registroHoraFinal" required aria-required="true">
+        </div>
+      </div>
+      <div class="field">
+        <label for="registroCedula">Cédula</label>
+        <input type="text" id="registroCedula" required aria-required="true" placeholder="Cédula">
+      </div>
+    `;
+  } else if (tipo === 'Pasantia') {
+    html = `
+      <div class="field">
+        <label for="registroHoras">Horas</label>
+        <input type="number" id="registroHoras" required aria-required="true" min="0" placeholder="Número de horas">
+      </div>
+      <div class="field">
+        <label for="registroActividadRealizada">Actividad realizada</label>
+        <input type="text" id="registroActividadRealizada" required aria-required="true" placeholder="Actividad realizada">
+      </div>
+    `;
+  } else if (tipo === 'Tesis') {
+    html = `
+      <div class="field">
+        <label for="registroActividadSelect">Actividad</label>
+        <select id="registroActividadSelect" required aria-required="true">
+          <option value="">– selecciona –</option>
+          <option value="Proyecto">Proyecto</option>
+          <option value="Tesis">Tesis</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="registroActividadRealizadaTesis">Actividad realizada</label>
+        <input type="text" id="registroActividadRealizadaTesis" required aria-required="true" placeholder="Actividad realizada">
+      </div>
+      <div class="field">
+        <label for="registroTipoPersona">Tipo de persona</label>
+        <select id="registroTipoPersona" required aria-required="true">
+          <option value="">– selecciona –</option>
+          <option value="Estudiante">Estudiante</option>
+          <option value="Investigador">Investigador</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="registroNombreTesis">Nombre de tesis</label>
+        <input type="text" id="registroNombreTesis" required aria-required="true" placeholder="Nombre de tesis">
+      </div>
+    `;
+  }
+
+  registroTipoDetalle.innerHTML = html;
+  registroTipoDetalle.classList.remove('hidden');
+}
+
+function collectRegistroDetalle_() {
+  const tipo = registroTipo.value;
+  if (!tipo) return null;
+
+  const inputs = Array.from(registroTipoDetalle.querySelectorAll('input, select'));
+  if (!validateRequired(inputs)) return null;
+
+  if (tipo === 'Practica') {
+    return {
+      actividad: 'Práctica de lab o Cátedra',
+      descripcion: [
+        `Asignatura: ${document.getElementById('registroAsignatura').value}`,
+        `Hora inicial: ${document.getElementById('registroHoraInicial').value}`,
+        `Hora final: ${document.getElementById('registroHoraFinal').value}`,
+        `Cédula: ${document.getElementById('registroCedula').value}`
+      ].join('; ')
+    };
+  }
+
+  if (tipo === 'Pasantia') {
+    return {
+      actividad: 'Pasantías',
+      descripcion: [
+        `Horas: ${document.getElementById('registroHoras').value}`,
+        `Actividad realizada: ${document.getElementById('registroActividadRealizada').value}`
+      ].join('; ')
+    };
+  }
+
+  if (tipo === 'Tesis') {
+    return {
+      actividad: document.getElementById('registroActividadSelect').value,
+      descripcion: [
+        `Actividad realizada: ${document.getElementById('registroActividadRealizadaTesis').value}`,
+        `Tipo de persona: ${document.getElementById('registroTipoPersona').value}`,
+        `Nombre de tesis: ${document.getElementById('registroNombreTesis').value}`
+      ].join('; ')
+    };
+  }
+
+  return null;
 }

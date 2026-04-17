@@ -174,6 +174,18 @@ function processMultiRequest_(ss, params) {
             correo
           ]);
         }
+        createEquipmentCalendarEvent_({
+          nombre: nombre,
+          correo: correo,
+          equipo: it.equipo || '',
+          fechaInicial: it.fechaUsoEquipo || fecha,
+          fechaFinal: it.fechaUsoEquipoFin || it.fechaUsoEquipo || fecha,
+          horaInicio: it.horaInicio || '',
+          horaFin: it.horaFin || '',
+          actividad: it.actividad || 'Uso de equipo',
+          descripcion: it.descripcion || '',
+          observaciones: observaciones || ''
+        });
         break;
       }
       case 'Solicitud de Insumos': {
@@ -283,6 +295,7 @@ function processSingleRequest_(ss, params) {
     fechaUsoInsumos: params.fechaUsoInsumos || '',
     nombreActividad: params.nombreActividad || '',
     fechaUsoEquipo: params.fechaUsoEquipo || '',
+    fechaUsoEquipoFin: params.fechaUsoEquipoFin || '',
     observaciones: params.observaciones || ''
   };
 
@@ -335,6 +348,18 @@ function processSingleRequest_(ss, params) {
       if (sheetUsoEquipo) {
         sheetUsoEquipo.appendRow([d.nombre, d.fechaUsoEquipo, d.equipo, d.nombreActividad, d.observaciones, d.correo]);
       }
+      createEquipmentCalendarEvent_({
+        nombre: d.nombre,
+        correo: d.correo,
+        equipo: d.equipo,
+        fechaInicial: d.fechaUsoEquipo,
+        fechaFinal: d.fechaUsoEquipoFin || d.fechaUsoEquipo,
+        horaInicio: d.horaInicio,
+        horaFin: d.horaFin,
+        actividad: d.nombreActividad || 'Uso de equipo',
+        descripcion: d.descripcion || '',
+        observaciones: d.observaciones
+      });
       break;
   }
 
